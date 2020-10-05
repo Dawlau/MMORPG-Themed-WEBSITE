@@ -1,0 +1,107 @@
+table {
+    border-collapse: collapse;
+    overflow: auto;
+}
+
+tbody > tr > td:nth-child(1), tbody > tr > td:nth-child(2), tfoot {
+    text-align: center;
+}
+
+tfoot {
+    font-size: 0.75em;
+}
+
+tbody > tr > td:nth-child(2) a:visited {
+    color: black;
+}
+
+tbody > tr > td:nth-child(3) {
+    text-indent: 2em;
+    background-color: antiquewhite;
+}
+
+table, thead, tbody, th, td, tr {
+    border: solid 2px;
+    border-color: darkgoldenrod;
+}
+
+th {
+    background-color: lightcyan;
+}
+
+table > caption {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+#result{
+
+    padding-bottom: 10em;
+}
+
+@media screen and (max-width: 1067px) {
+
+    #Table, #Table tr {
+        border: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        width: 100%;
+        min-width: 10px;
+        font-size: 2vw;
+    }
+
+    table, thead, tbody, th, td, tr {
+        border: none;
+    }
+
+    #Table td {
+        display: block;
+        padding: 0.2em;
+        box-sizing: border-box;
+    }
+
+    #Table thead {
+        display: none;
+    }
+
+    #Table tbody > tr:nth-child(8) > td:nth-child(2) {
+        max-width: 200px;
+        font-size: 1vw;
+    }
+
+    #Table tbody td:nth-child(1)::before {
+        content: "MMORPG: ";
+    }
+
+    #Table tbody td:nth-child(2)::before {
+        content: "Home page: ";
+    }
+
+    #Table tbody td:nth-child(3)::before {
+        content: "Descriere: ";
+    }
+
+    #Table td {
+        border-bottom: none;
+        border-top: none;
+        float: left;
+        width: 80%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #Table td::before {
+        float: left;
+        width: 35%;
+        font-weight: bold;
+        margin-right: 0.5em;
+        padding: 0.1em;
+        line-height: 100%;
+        font-size: 1em;
+    }
+
+    #Table tr:last-child {
+        margin-bottom: 25vw;
+    }
+}

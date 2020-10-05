@@ -1,0 +1,19 @@
+.GridDisplay {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.GridDisplay section:nth-child(1) {
+
+    grid-area: 1/1/2/2;
+}
+
+.GridDisplay section:nth-child(2) {
+    grid-area: 1/2/2/3;
+}
+
+.GridDisplay section:nth-child(3) {
+    grid-area: 2/1/3/3;
+}

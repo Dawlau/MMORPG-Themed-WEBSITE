@@ -1,0 +1,273 @@
+@font-face {
+    src: url('IndieFlower-Regular.ttf');
+    font-family: IndieFlower;
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Indie Flower';
+    font-size: 1.5em;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+#Header {
+    background-color: darkslategrey;
+    color: red;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3vw;
+}
+
+#Title {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#Title > a {
+    color: red;
+}
+
+#Menu {
+    height: 100%;
+    width: 100%;
+}
+
+#Menu a {
+    color: red;
+    background-color: darkslategrey;
+    display: block;
+    transition: background-color 0.4s;
+}
+
+#Menu a:hover {
+    background-color: green;
+}
+
+#Menu ul {
+    list-style: none;
+    display: flex;
+}
+
+#Menu li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    align-self: center;
+}
+
+#Menu li:hover #SubMenu li {
+    display: block;
+}
+
+#SubMenu li {
+    display: none;
+}
+
+#SubMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+section {
+    margin: 5vw;
+}
+
+section > h2 {
+
+    padding: 1vw;
+}
+
+section  p {
+    text-indent: 2em;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px black;
+    margin-bottom: 2em;
+    background-image: radial-gradient(orange, yellow, green);
+}
+
+section > section {
+    margin-top: 2em;
+}
+
+#Footer {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    bottom: 0;
+    background-image: url('../images/footer-background.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+#Footer > #Button {
+    float: left;
+}
+
+#Footer a {
+    color: white;
+}
+
+#Footer a:hover {
+    color: aqua
+}
+
+.endMargin {
+    margin-bottom: 4.1em;
+}
+
+@media screen and (max-width: 337px) {
+
+    #Header {
+        min-width:338px;
+    }
+}
+
+.center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;
+    left: 40%;
+    top: 40%;
+}
+
+.logout{
+    color: red;
+}
+
+.logout a:visited{
+
+    color: red;
+}
+
+.userData{
+
+    display: flex;
+    flex-direction: column;
+}
+
+form a:visited{
+
+    color: orangered;
+}
+
+.login {
+    position: absolute;
+    color: red;
+    font-size: 1.5em;
+}
+
+.login a:visited {
+    position: absolute;
+    color: red;
+    font-size: 1.5em;
+}
+
+.center a:visited{
+
+    color: black;
+}
+
+a span{
+    color:red;
+}
+
+button {
+    background-color: orange;
+    padding: 1em;
+    margin: 1em;
+}
+
+.centerbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@-webkit-keyframes transparency {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+#printJson {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#printJson div{
+    border:solid;
+    padding: 1em;
+
+}
+
+#printJson div span {
+    font-size: 1.25em;
+    color: purple;
+    font-weight: bold;
+}
+
+#result {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#result div {
+    border: solid;
+    padding: 1em;
+}
+
+#result div span {
+    font-size: 1.25em;
+    color: purple;
+    font-weight: bold;
+}
+
+.centerbuttoninput{
+
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.waitmessage{
+
+    background-color: blue;
+    color: mediumpurple;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}

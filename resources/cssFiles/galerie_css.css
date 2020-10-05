@@ -1,0 +1,54 @@
+#Gallery figcaption{
+    text-align: center;
+    width: 100%;
+}
+
+#Gallery .images {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#Gallery figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+#Gallery img {
+    width: 30%;
+    height: 30%;
+    margin: 1em;
+}
+
+section > section {
+    margin-bottom: 5em;
+}
+
+#Gallery > h2 {
+    font-weight: bolder;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5em;
+    text-decoration: line-through; 
+}
+
+#Gallery > h2:hover {
+    animation-name: titleAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    text-align: center;
+}
+
+@keyframes titleAnimation {
+
+    from {
+        text-decoration: none;
+    }
+
+    to {
+        font-size: 0px;
+        text-decoration: none;
+    }
+}

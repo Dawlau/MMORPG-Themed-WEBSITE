@@ -1,0 +1,37 @@
+<header id="Header">
+                
+                <% if(locals.user){ %>
+                    <div class="info_login" class="userdata">
+                      <div>You are logged in as: <%= user %></div>
+                      <a href="logout.html" class="logout">Logout</a>
+                    </div>
+                  <% } else {%>
+                      <a href="login.html" class="login"></a>
+                  <% } %>
+                
+                
+                
+
+
+            <h1 id="Title"><a href="index"> MMOS </a></h1>
+
+            <nav id="Menu">
+
+                <ul>
+
+                    <li><a href="index"> Home </a></li>
+                    <li><a href="Common_Features"> Common_Features </a></li>
+                    <li>
+                        <a> The most popular MMORPGs ever </a>
+                        <ul id="SubMenu">
+                            <li><a href="Gallery"> Gallery </a></li>
+                            <li><a href="Table"> Presentation </a></li>
+                            <li><a href="MMOS"> Games </a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </header>

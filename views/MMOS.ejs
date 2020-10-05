@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title> MMOS </title>
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="../cssFiles/default_css.css" />
+        <link rel="stylesheet" type="text/css" href="../cssFiles/index_css.css" />    
+        <link rel="stylesheet" type="text/css" href="../cssFiles/tabel_css.css" />    
+
+    </head>
+
+    <body>
+
+        <%- include('Header.ejs') %>
+
+		<main>
+			<div id="printJson">
+
+			</div>
+
+			<div>
+				<div class="centerbutton">
+					<div class="centerbuttoninput">
+						<button id="selectReleaseDate"> Select by release date  </button>
+						<input id="releaseDataInput"> </input>
+						<button id="usedValues"> Used values </button>
+					</div>
+					<button id="sortActivePlayers"> Sort by number of active players</button>
+					<div class="centerbuttoninput">
+						<button id="countActivePlayers"> Count by number of active players </button>
+						<input id="activePlayersInput"></input>
+					</div>
+					<button id="sortFormula"> Sort by active players divided by release date </button>
+					<div class="centerbuttoninput">
+						<button id="selectPattern"> Select by pattern </button>
+						<input id="patternInput"></input>
+					</div>
+				</div>
+			</div>
+
+			<div id="result">
+			</div>
+
+		</main>
+
+        <%- include('Footer.ejs') %>
+
+        <script src="../javascriptFiles/countWords.js"></script>
+        <script src="../javascriptFiles/sortings.js"></script>
+		<script src="../javascriptFiles/ejs.min.js"></script>
+		<script src="../javascriptFiles/elapseTime.js"></script>
+    </body>
+
+</html>
